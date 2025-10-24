@@ -8,7 +8,8 @@ function ContactSection() {
       className="scroll-mt-24 md:scroll-mt-28 bg-[#F4FAFA] text-gray-800 py-12 px-6"
       aria-labelledby="contact-heading"
     >
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8 text-sm md:text-base text-center md:text-left">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start gap-8 text-sm md:text-base text-center md:text-left">
+
 
         {/* Visit Us */}
         <div className="flex-1">
