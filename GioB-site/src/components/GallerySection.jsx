@@ -2,14 +2,14 @@
 import { useEffect, useState } from "react";
 
 const galleryImages = [
-  "/images/fronthair.jpeg",
+  "/images/lasthair.jpg",
   "/images/curlhair.jpg",
   "/images/brunnete.jpg",
   "/images/stylehair.jpg",
   "/images/redhair.jpg",
   "/images/naturalhair.jpeg",
   "/images/shorthair.jpg",
-  "/images/lasthair.jpg",
+  "/images/fronthair.jpeg",
 ];
 
 function GallerySection() {
