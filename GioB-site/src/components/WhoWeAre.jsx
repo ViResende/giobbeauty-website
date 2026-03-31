@@ -42,14 +42,14 @@ function WhoWeAre() {
         </div>
 
         {/* Gigi photo (narrower, capped height) */}
-        <figure className="rounded-xl shadow-md overflow-hidden">
-          <img
-            src="/images/teamwithgi.jpg"
-            alt="Owner Giovanna B."
-            loading="lazy"
-            className="w-full h-[360px] md:h-[520px] object-cover object-[50%_30%]"
-          />
-        </figure>
+ <figure className="rounded-xl shadow-md overflow-hidden w-full" style={{ aspectRatio: '3/4' }}>
+  <img
+    src="/images/teamwithGi.png"
+    alt="GioB team"
+    className="w-full h-full object-cover"
+    style={{ objectPosition: '50% 15%' }}
+  />
+</figure>
       </div>
     </section>
   );
