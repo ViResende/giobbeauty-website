@@ -1,10 +1,11 @@
 function TeamSection() {
   const links = {
     gigi: "https://www.joinblvd.com/b/giobbeauty/widget#/cart/menu/Head%20Spa%20Services",
-    sandra:
-      "https://book.squareup.com/appointments/ryd1zuokxr7b9j/location/9FWGK607070PH/services",
-    maddy:
-      "https://www.joinblvd.com/b/giobbeauty/widget#/cart/menu/Hair%20Services",
+    sandra: "https://book.squareup.com/appointments/ryd1zuokxr7b9j/location/9FWGK607070PH/services",
+    maddy: "https://www.joinblvd.com/b/giobbeauty/widget#/cart/menu/Hair%20Services",
+    alicia: "https://www.instagram.com/licializet",
+    ariana: "https://www.instagram.com/acrylixsbyari",
+    kiara: "https://haus-of-kie.square.site/",
   };
 
   const people = [
@@ -23,11 +24,32 @@ function TeamSection() {
       cta: "Book with Sandra",
     },
     {
+      name: "Alicia",
+      role: "Master Hairstylist",
+      img: "/images/alicia.webp",
+      link: links.alicia,
+      cta: "Book with Alicia",
+    },
+    {
       name: "Maddy",
       role: "Junior Hairstylist",
       img: "/images/maddy.jpg",
       link: links.maddy,
       cta: "Book with Maddy",
+    },
+    {
+      name: "Ariana",
+      role: "Nail Tech",
+      img: "/images/ariana.webp",
+      link: links.ariana,
+      cta: "Book with Ariana",
+    },
+    {
+      name: "Kiara",
+      role: "Esthetician",
+      img: "/images/kiara.webp",
+      link: links.kiara,
+      cta: "Book with Kiara",
     },
   ];
 
@@ -35,7 +57,7 @@ function TeamSection() {
     <section
       id="team"
       tabIndex="-1"
-      className="scroll-mt-24 md:scroll-mt-28 bg-white text-gray-800 px-6 py-16 text-center"
+      className="scroll-mt-24 md:scroll-mt-28 bg-white text-gray-800 px-6 py-20 text-center"
       aria-labelledby="team-heading"
     >
       <h2
@@ -45,43 +67,44 @@ function TeamSection() {
         Meet Our Team
       </h2>
 
-      <p className="max-w-3xl mx-auto mb-12 text-base md:text-lg leading-relaxed">
+      <p className="max-w-2xl mx-auto mb-14 text-base md:text-lg leading-relaxed text-gray-600">
         At GioB Beauty, our talented professionals bring expertise and passion
         to every service from scalp care and hairstyling to nails and beauty
         treatments.
       </p>
 
-      {/* Spread 3 cards evenly (left / center / right) */}
       <ul
         role="list"
-        className="grid gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto justify-items-stretch"
+        className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto"
       >
         {people.map((p) => (
           <li
             key={p.name}
-            className="bg-pink-50 p-6 rounded-lg shadow-md w-full h-full flex flex-col items-center"
+            className="bg-[#fff5f8] p-7 rounded-2xl shadow-sm border border-pink-100 w-full min-h-[360px] flex flex-col items-center transition hover:-translate-y-1 hover:shadow-lg"
           >
             <img
               src={p.img}
               alt={`${p.name} — ${p.role}`}
-              className="w-44 h-44 rounded-full mx-auto mb-4 object-cover"
+              className="w-40 h-40 rounded-full mx-auto mb-5 object-cover object-center ring-4 ring-white shadow-md"
+              width={160}
+              height={160}
+              loading="lazy"
+              decoding="async"
             />
 
             <div className="text-center">
               <h3 className="text-xl font-semibold">{p.name}</h3>
-              <p className="text-sm text-gray-600">{p.role}</p>
+              <p className="text-sm text-gray-500 mt-1">{p.role}</p>
             </div>
 
             {p.link && (
-              <div className="mt-auto pt-4">
+              <div className="mt-auto pt-5">
                 <a
                   href={p.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center h-11 min-w-[190px] px-5 rounded-full
-                             bg-rose-200 text-gray-800 hover:text-[#407088] shadow-sm transition text-sm font-medium
-                             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#407088]"
-                  aria-label={`${p.cta} (opens in a new tab)`}
+                  className="inline-flex items-center justify-center h-11 min-w-[190px] px-5 rounded-full bg-[#f8c8d0] text-gray-800 hover:bg-[#407088] hover:text-white shadow-sm transition text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#407088]"
+                  aria-label={`${p.cta} opens in a new tab`}
                 >
                   {p.cta}
                 </a>
@@ -91,17 +114,16 @@ function TeamSection() {
         ))}
       </ul>
 
-      {/* WE ARE HIRING */}
-      <div className="max-w-3xl mx-auto mt-14 bg-pink-50 rounded-xl p-8 shadow-sm">
+      <div className="max-w-3xl mx-auto mt-16 bg-[#fff5f8] rounded-2xl p-8 shadow-sm border border-pink-100">
         <h3 className="text-2xl md:text-3xl font-bold text-[#407088]">
           WE ARE HIRING
         </h3>
 
-        <p className="mt-3 text-base md:text-lg text-gray-700">
+        <p className="mt-3 text-base md:text-lg text-gray-600">
           Rooms &amp; Stations available
         </p>
 
-        <p className="mt-4 text-gray-700">
+        <p className="mt-4 text-gray-600">
           Contact Gigi at{" "}
           <a
             href="tel:+17073669133"
