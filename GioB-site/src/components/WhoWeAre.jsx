@@ -44,7 +44,7 @@ function WhoWeAre() {
         {/* Gigi photo (narrower, capped height) */}
  <figure className="rounded-xl shadow-md overflow-hidden w-full" style={{ aspectRatio: '3/4' }}>
   <img
-    src="/images/teamwithGi.png"
+    src="/images/ginew.jpg"
     alt="GioB team"
     className="w-full h-full object-cover"
     style={{ objectPosition: '50% 15%' }}

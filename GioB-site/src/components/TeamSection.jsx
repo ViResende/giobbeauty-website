@@ -1,8 +1,6 @@
 function TeamSection() {
   const links = {
     gigi: "https://www.joinblvd.com/b/giobbeauty/widget#/cart/menu/Head%20Spa%20Services",
-    sandra: "https://book.squareup.com/appointments/ryd1zuokxr7b9j/location/9FWGK607070PH/services",
-    maddy: "https://www.joinblvd.com/b/giobbeauty/widget#/cart/menu/Hair%20Services",
     alicia: "https://www.instagram.com/licializet",
     ariana: "https://www.instagram.com/acrylixsbyari",
     kiara: "https://haus-of-kie.square.site/",
@@ -16,13 +14,7 @@ function TeamSection() {
       link: links.gigi,
       cta: "Explore Head Spa",
     },
-    {
-      name: "Sandra",
-      role: "Master Hairstylist",
-      img: "/images/sandrahair.jpg",
-      link: links.sandra,
-      cta: "Book with Sandra",
-    },
+   
     {
       name: "Alicia",
       role: "Master Hairstylist",
@@ -30,13 +22,7 @@ function TeamSection() {
       link: links.alicia,
       cta: "Book with Alicia",
     },
-    {
-      name: "Maddy",
-      role: "Junior Hairstylist",
-      img: "/images/maddy.jpg",
-      link: links.maddy,
-      cta: "Book with Maddy",
-    },
+
     {
       name: "Ariana",
       role: "Nail Tech",
@@ -75,7 +61,7 @@ function TeamSection() {
 
       <ul
         role="list"
-        className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto"
+        className="grid gap-8 grid-cols-1 sm:grid-cols-2 max-w-4xl mx-auto"
       >
         {people.map((p) => (
           <li
