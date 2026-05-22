@@ -61,7 +61,7 @@ function TeamSection() {
 
       <ul
         role="list"
-        className="grid gap-8 grid-cols-1 sm:grid-cols-2 max-w-4xl mx-auto"
+        className="grid gap-12 grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto"
       >
         {people.map((p) => (
           <li
